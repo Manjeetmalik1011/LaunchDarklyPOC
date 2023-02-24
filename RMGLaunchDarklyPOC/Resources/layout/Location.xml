@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.razormist.simpleloginapplication.Login">
+ 
+ 
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="43dp"
+        android:text="Location permissions"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="30sp"/>
+ 
+ 
+  <TextView
+        android:id="@+id/user_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_location"
+        android:layout_alignStart="@+id/tv_location"
+        android:layout_below="@+id/tv_location"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="Choose your location"
+        android:textSize="25sp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_location"
+        android:layout_alignStart="@+id/user_location"
+        android:layout_below="@+id/user_location"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:textSize="25sp"
+        android:id="@+id/spinner_id" />
+
+     <TextView
+        android:id="@+id/user_location_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner_id"
+        android:layout_alignStart="@+id/spinner_id"
+        android:layout_below="@+id/spinner_id"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="User Location Permissions"
+        android:textSize="25sp" />
+
+     <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_location_permission"
+        android:layout_alignStart="@+id/user_location_permission"
+        android:layout_below="@+id/user_location_permission"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:textSize="25sp"
+        android:id="@+id/listview_id" />
+</RelativeLayout>
+
